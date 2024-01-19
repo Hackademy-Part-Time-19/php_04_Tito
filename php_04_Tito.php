@@ -63,7 +63,7 @@ class Street extends City
 
 // Traccia 2
 
-abstract class Vertebrates
+abstract class Animals
 {
   public $category;
  
@@ -73,7 +73,7 @@ abstract class Vertebrates
   }
 }
 
-class WarmBlooded extends Vertebrates{
+class WarmBlooded extends Animals{
 protected function species(){
   echo "Sono un animale a Sangue Caldo"."\n";
 }
@@ -99,7 +99,7 @@ class Bird extends WarmBlooded{
   }
 }
 
-class ColdBlooded extends Vertebrates{
+class ColdBlooded extends Animals{
   protected function species(){
     echo "Sono un animale a Sangue Freddo"."\n";
   }
